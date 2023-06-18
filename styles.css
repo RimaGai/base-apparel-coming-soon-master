@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-size: 16px;
-  text-align: left;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -13,5 +17,12 @@ body {
 
 .main-content {
   background: url(images/bg-pattern-desktop.svg);
+}
 
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
