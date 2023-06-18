@@ -12,14 +12,10 @@ body {
 }
 
 .container {
-  display: flex;
-  background: url(images/bg-pattern-desktop.svg);
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  background: url(images/bg-pattern-desktop.svg),
+    linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .mobile-hero {
@@ -34,9 +30,11 @@ h1 span {
 h1 {
   text-transform: uppercase;
   color: hsl(0, 6%, 24%);
+  font-size: 3rem;
+  letter-spacing: 12px;
 }
 
-.main-content p {
+.left-section p {
   color: hsl(0, 36%, 70%);
 }
 
@@ -54,11 +52,12 @@ input {
 
 @media only screen and (max-width: 770px) {
   .container {
+    display: flex;
     flex-direction: column;
     background: none;
   }
 
-  .main-content {
+  .left-section {
     background: none;
   }
 
@@ -68,9 +67,27 @@ input {
 
   .mobile-hero img {
     width: 100%;
+    margin-bottom: 50px;
   }
 
-  .image {
+  .main-content {
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
     display: none;
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
   }
 }
