@@ -22,6 +22,10 @@ body {
   justify-content: center;
 }
 
+.mobile-hero {
+  display: none;
+}
+
 h1 span {
   color: hsl(0, 36%, 70%);
   font-weight: 300;
@@ -48,16 +52,25 @@ input {
   border: 1px solid hsl(0, 36%, 70%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    background: none;
   }
 
   .main-content {
     background: none;
   }
 
-  .desktop-logo {
+  .mobile-hero {
+    display: block;
+  }
+
+  .mobile-hero img {
+    width: 100%;
+  }
+
+  .image {
     display: none;
   }
 }
