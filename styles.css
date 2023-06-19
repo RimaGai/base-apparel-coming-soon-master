@@ -91,6 +91,10 @@ form {
   top: 25%;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 button {
   background-color: hsl(0, 93%, 68%);
   background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));

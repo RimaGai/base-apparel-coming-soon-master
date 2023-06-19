@@ -29,10 +29,11 @@
 
         <form>
           <input type="email" name="email" id="email" placeholder="Email Address" required>
-          <button type="submit" class="button" onclick="isEmpty()"><img src="./images/icon-arrow.svg" alt=""></button>
-          <div class="error-icon"><img src="images/icon-error.svg" alt=""></div>
+          <button type="submit" class="button" onclick="checkEmail()"><img src="./images/icon-arrow.svg"
+              alt=""></button>
+          <div class="error-icon hidden"><img src="images/icon-error.svg" alt=""></div>
         </form>
-        <small class="error-message">Please provide a valid email!</small>
+        <small class="error-message hidden">Please provide a valid email!</small>
       </div>
       <footer>
         <p class="attribution">
