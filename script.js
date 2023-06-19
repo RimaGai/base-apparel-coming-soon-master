@@ -8,9 +8,11 @@ function checkEmail() {
   if (emailValue === "" || !validate(emailValue)) {
     errorMessage.classList.remove("hidden");
     errorIcon.classList.remove("hidden");
+    form.classList.add("error");
   } else {
     errorMessage.classList.add("hidden");
     errorIcon.classList.add("hidden");
+    form.classList.remove("error");
   }
 }
 
