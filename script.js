@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 const errorMessage = document.querySelector(".error-message");
+const successMessage = document.querySelector(".success-message");
 const errorIcon = document.querySelector(".error-icon");
 const input = document.querySelector("#email");
 
@@ -9,10 +10,12 @@ function checkEmail() {
     errorMessage.classList.remove("hidden");
     errorIcon.classList.remove("hidden");
     form.classList.add("error");
+    successMessage.classList.add("hidden");
   } else {
     errorMessage.classList.add("hidden");
     errorIcon.classList.add("hidden");
     form.classList.remove("error");
+    successMessage.classList.remove("hidden");
   }
 }
 
