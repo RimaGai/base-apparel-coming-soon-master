@@ -158,10 +158,14 @@ button {
   form {
     width: 80vw;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   button {
     width: 4rem;
+  }
+
+  footer {
+    margin-top: 30px;
   }
 }
