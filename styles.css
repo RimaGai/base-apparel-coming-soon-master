@@ -77,6 +77,18 @@ input::placeholder {
 form {
   display: flex;
   position: relative;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #f96464;
+  padding: 15px;
+}
+
+.error-icon {
+  position: absolute;
+  right: 25%;
+  top: 25%;
 }
 
 button {

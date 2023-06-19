@@ -17,7 +17,7 @@
         <img src="images/logo.svg" alt="brand logo">
       </div>
       <div class="mobile-hero">
-        <img src="./images/hero-mobile.jpg" alt="">
+        <img src="images/hero-mobile.jpg" alt="">
       </div>
       <div class="main-content">
         <h1>
@@ -29,8 +29,10 @@
 
         <form>
           <input type="email" name="email" id="email" placeholder="Email Address" required>
-          <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+          <button type="submit" class="button" onclick="isEmpty()"><img src="./images/icon-arrow.svg" alt=""></button>
+          <div class="error-icon"><img src="images/icon-error.svg" alt=""></div>
         </form>
+        <small class="error-message">Please provide a valid email!</small>
       </div>
       <footer>
         <p class="attribution">
@@ -40,9 +42,10 @@
       </footer>
     </div>
     <div class="right-section">
-      <img src="./images/hero-desktop.jpg" alt="">
+      <img src="images/hero-desktop.jpg" alt="">
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
