@@ -31,11 +31,23 @@ h1 {
   text-transform: uppercase;
   color: hsl(0, 6%, 24%);
   font-size: 3rem;
-  letter-spacing: 12px;
+  letter-spacing: 13px;
+  flex: 1;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.main-content {
+  width: 450px;
 }
 
 .left-section p {
   color: hsl(0, 36%, 70%);
+  line-height: 2rem;
 }
 
 footer {
@@ -48,6 +60,26 @@ a {
 
 input {
   border: 1px solid hsl(0, 36%, 70%);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+form {
+  display: flex;
+  position: relative;
+}
+
+button {
+  background-color: hsl(0, 93%, 68%);
+  background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  cursor: pointer;
+  width: 6rem;
+  height: 3.1rem;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
 }
 
 @media only screen and (max-width: 770px) {
@@ -78,7 +110,6 @@ input {
 
   h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
   }
 
   .right-section {
@@ -89,5 +120,14 @@ input {
     text-align: center;
     line-height: 1.5rem;
     margin-bottom: 20px;
+  }
+
+  .logo {
+    padding: 1.5rem;
+  }
+
+  form {
+    width: 80vw;
+    margin: auto;
   }
 }
