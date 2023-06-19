@@ -32,13 +32,15 @@ h1 {
   color: hsl(0, 6%, 24%);
   font-size: 3rem;
   letter-spacing: 13px;
-  flex: 1;
+  margin-bottom: 30px;
 }
 
 .left-section {
   display: flex;
   flex-direction: column;
   margin: auto;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .main-content {
@@ -48,6 +50,7 @@ h1 {
 .left-section p {
   color: hsl(0, 36%, 70%);
   line-height: 2rem;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -63,6 +66,12 @@ input {
   width: 100%;
   padding: 1rem;
   border-radius: 30px;
+  background: transparent;
+  opacity: 50%;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
 }
 
 form {
@@ -129,5 +138,10 @@ button {
   form {
     width: 80vw;
     margin: auto;
+    margin-bottom: 40px;
+  }
+
+  button {
+    width: 4rem;
   }
 }
